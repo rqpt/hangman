@@ -5,7 +5,7 @@ guesses_left = 10
 broken_word = Array.new(secret_word.length, '_')
 secret_word_arr = secret_word.split('')
 
-until guesses_left == 0
+until guesses_left.zero?
   puts "You have #{guesses_left} guesses left, guess a letter"
   puts "            #{broken_word.join(' ')}"
   guess = gets.chomp
