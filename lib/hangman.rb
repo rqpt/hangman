@@ -16,6 +16,7 @@ class Game
       @guesses_left -= 1
       break if @secret_word_arr == @broken_word
     end
+    display_result
   end
 
   private
@@ -38,4 +39,3 @@ end
 
 game = Game.new
 game.play_game
-game.display_result
